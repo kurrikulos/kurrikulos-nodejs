@@ -1,0 +1,8 @@
+<% include ../top %>
+    <form action="/usuario/registro" enctype="application/x-www-form-urlencoded" method="POST">
+        Nome: <input type="text" name="nome" required autofocus> <br>
+        Email: <input type="email" name="email" required> <br>
+        Senha:<input type="password" name="senha" required> <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+<% include ../bottom %>

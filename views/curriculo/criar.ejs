@@ -1,0 +1,81 @@
+<% include ../top %>
+    <form action="curriculo/criar" enctype="application/x-www-form-urlencoded" method="POST">
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend> Dados pessoais </legend>
+            * Nome completo: <input type="text" name="nomeCompleto" value="" required> <br>
+            <input type="hidden" name="email" value="<%- user.id %>" disabled>
+            * Telefone: <input type="text" name="telefone" value="" required> <br>
+            * Idade: <input type="text" name="idade" value="" required> <br>
+            Habilitação: <input type="text" name="idade" value="" > <br>
+        </fieldset> <br>
+
+        <!-- ENDEREÇO -->
+        <fieldset>
+            <legend> Endereço </legend>
+            Número: <input type="text" name="numero" value=""> <br>
+            Bloco: <input type="text" name="bloco" value=""> <br>
+            * Rua: <input type="text" name="rua" value=""> <br>
+            * Bairro: <input type="text" name="bairro" value=""> <br>
+            * Cidade: <input type="text" name="cidade" value=""> <br>
+            * Estado: <input type="text" name="estado" value=""> <br>
+        </fieldset> <br>
+        <fieldset>
+            <legend> * Objetivo </legend>
+            <textarea style="width: 100%; height: 30vh;" name="objetivo">
+
+            </textarea>
+        </fieldset> <br>
+
+        <!-- EDUCAÇÃO E CURSOS -->
+        * Educação: <input type="text" name="educacao" value="" placeholder="Ex.: Ensino Médio Incompleto"> <br>
+        <fieldset>
+            <legend> Cursos </legend>
+            Nome do curso: <input type="text" name="tituloCurso" value=""> <br>
+            Descrição do curso: <input type="text" name="descricaoCurso" value=""> <br>
+            Instituição: <input type="text" name="instituicao" value=""> <br>
+            Início: <input type="text" name="inicioCurso" value=""> <br>
+            Término: <input type="text" name="fimCurso" value=""> <br>
+            <p>
+                <a href="">
+                <span style="background-color: blue; color: white; border-radius: 250px;"> + </span>
+                &nbsp; Novo curso
+                </a>
+            </p>
+        </fieldset> <br>
+
+        <!-- EXPERIẼNCIAS PROFISSIONAIS -->
+        <fieldset>
+            <legend> Experiências </legend>
+            Empresa: <input type="text" name="empresa" value=""> <br>
+            Cargo: <input type="text" name="descricaoCurso" value=""> <br>
+            Data de entrada: <input type="text" name="entrada" value="" placeholder="Digite dessa forma --> 00/00/0000"> <br>
+            Data de Saída: <input type="text" name="empresa" value=""> <br>
+            Descrição do Cargo: <input type="text" name="descricaoCargo" value=""> <br>
+            <p>
+                <a href="">
+                <span style="background-color: blue; color: white; border-radius: 250px;"> + </span>
+                 &nbsp; Nova experiência
+                </a>
+            </p>
+        </fieldset> <br>
+
+        <!-- CERTIFICADOS -->
+        <fieldset>
+            <legend> Certificados </legend>
+            Título: <input type="text" name="tituloCertificado" value=""> <br>
+            Data de Expedição: <input type="text" name="dataExpedicao" value=""> <br>
+            Descrição do certificado: <input type="text" name="descricaoCertificado" value="" placeholder="Digite dessa forma --> 00/00/0000"> <br>
+            <p>
+                <a href="">
+                <span style="background-color: blue; color: white; border-radius: 250px;"> + </span>
+                 &nbsp; Novo certificado
+                </a>
+            </p>
+        </fieldset> <br>
+        <p>
+          <button type="submit">Salvar currículo</button>
+        </p>
+    </form>
+
+<% include ../bottom %>

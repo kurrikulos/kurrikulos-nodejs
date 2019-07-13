@@ -1,0 +1,13 @@
+<% include ../top %>
+    <form action="login" enctype="application/x-www-form-urlencoded" method="POST">
+        <div class="ms-TextField">
+            <label class="ms-Label">Email:</label>
+            <input class="ms-TextField-field" type="email" name="email" required autofocus>
+        </div>
+        <div class="ms-TextField">
+            <label class="ms-Label">Senha:</label>
+            <input class="ms-TextField-field" type="password" name="senha" required>
+        </div>
+        <button type="submit" class="ms-Button">Login</button>
+    </form>
+<% include ../bottom %>
