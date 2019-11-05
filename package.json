@@ -25,7 +25,7 @@
     "express-validator": "^5.3.1",
     "imgur": "^0.3.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.5.7",
+    "mongoose": "^5.7.5",
     "node-sessionstorage": "^1.0.0",
     "nodemon": "^1.19.1",
     "simple-mongoose-creator-v1": "git+https://github.com/deeborges/simple-mongoose-creator-v1.git"
